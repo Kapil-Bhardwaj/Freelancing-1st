@@ -1,17 +1,17 @@
-
 /*** Spinner Start ***/
 #spinner {
     opacity: 0;
     visibility: hidden;
     transition: opacity .8s ease-out, visibility 0s linear .5s;
     z-index: 99999;
- }
+}
 
- #spinner.show {
-     transition: opacity .8s ease-out, visibility 0s linear .0s;
-     visibility: visible;
-     opacity: 1;
- }
+#spinner.show {
+    transition: opacity .8s ease-out, visibility 0s linear .0s;
+    visibility: visible;
+    opacity: 1;
+}
+
 /*** Spinner End ***/
 
 
@@ -22,12 +22,22 @@
     z-index: 99;
 }
 
-h1, h2, h3, .h1, .h2, .h3 {
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
     font-weight: 400 !important;
     font-family: 'Playball', cursive !important;
 }
 
-h4, h5, h6, .h4, .h5, .h6 {
+h4,
+h5,
+h6,
+.h4,
+.h5,
+.h6 {
     font-weight: 600 !important;
     font-family: 'Open Sans', sans-serif !important;
 }
@@ -95,6 +105,7 @@ h4, h5, h6, .h4, .h5, .h6 {
     justify-content: center;
     font-weight: normal;
 }
+
 /*** Button End ***/
 
 
@@ -102,7 +113,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 .nav-bar {
     background: var(--bs-light);
     border-bottom: 1px solid rgba(0, 0, 0, .05);
-    background-color:rgba(0, 0, 0, .0);
+    background-color: rgba(0, 0, 0, .0);
 
 }
 
@@ -116,7 +127,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
     color: var(--bs-primary);
-   
+
 }
 
 .navbar .dropdown-toggle::after {
@@ -138,7 +149,7 @@ h4, h5, h6, .h4, .h5, .h6 {
         transition: .5s;
         opacity: 0;
     }
-    
+
     .navbar .nav-item:hover .dropdown-menu {
         transform: rotateX(0deg);
         visibility: visible;
@@ -154,6 +165,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 #searchModal .modal-content {
     background-color: rgba(255, 255, 255, .95);
 }
+
 /*** Navbar End ***/
 
 
@@ -178,6 +190,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 .event .event-img:hover .event-overlay {
     opacity: 1;
 }
+
 /*** Events End ***/
 
 
@@ -233,6 +246,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 .service-item .service-content-icon a.btn-primary {
     transition: 1s !important;
 }
+
 /*** Services End ***/
 
 
@@ -244,6 +258,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 .menu .menu-item .border-bottom {
     border-bottom-style: dashed !important;
 }
+
 /*** Menu End ***/
 
 
@@ -324,6 +339,23 @@ h4, h5, h6, .h4, .h5, .h6 {
     border-bottom: 22px solid transparent;
 }
 
+.footer-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-icon {
+    margin-top: 1rem;
+    /* Adjust the margin as needed */
+}
+
+.text-body {
+    display: block;
+    /* Ensure the links are displayed as block elements for better spacing */
+    margin-bottom: 0.5rem;
+    /* Adjust the margin as needed */
+}
+
 @keyframes pulse-border {
     0% {
         transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
@@ -364,6 +396,7 @@ h4, h5, h6, .h4, .h5, .h6 {
     background: #000000;
     opacity: 1;
 }
+
 /*** Youtube Video End ***/
 
 
@@ -393,6 +426,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 .blog-item:hover .blog-content a.btn h5 {
     color: var(--bs-primary) !important;
 }
+
 /*** Blog End ***/
 
 
@@ -439,6 +473,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 .team-item:hover .team-content p {
     color: var(--bs-white);
 }
+
 /*** Team End ***/
 
 
@@ -456,6 +491,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 .testimonial-carousel.owl-rtl .testimonial-item {
     direction: ltr !important;
 }
+
 /*** testimonial End ***/
 
 
@@ -471,15 +507,30 @@ h4, h5, h6, .h4, .h5, .h6 {
 .footer .footer-item a.text-body:hover {
     color: var(--bs-primary) !important;
 }
+
 /*** Footer End ***/
 
 
 
-.containerr {
+/* .containerr {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding: 0.5rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid blue;
+} */
+
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Adjust as needed */
+    gap: 20px;
+    /* Adjust the gap between the map and the form */
+    padding: 0.5rem 1rem;
     max-width: 1200px;
     margin: 0 auto;
     border: 1px solid blue;
@@ -488,19 +539,25 @@ h4, h5, h6, .h4, .h5, .h6 {
 .map {
     flex: 1;
     width: 100%;
-    height: 400px; /* You can adjust the height as needed */
+    height: 400px;
+    /* You can adjust the height as needed */
+    box-sizing: border-box;
 }
 
 .contact-form {
-    flex:1;
+    flex: 1;
     background: #fff;
     padding: 20px;
     border-radius: 10px;
     text-align: left;
-    width: 100%; /* Make the form width match the map */
+    width: 100%;
+    /* Make the form width match the map */
     max-width: 800px;
-    max-height: 400px; /* Reduce the height of the form */
-    overflow: auto; /* Add a scrollbar if the content exceeds the height */
+    max-height: 400px;
+    /* Reduce the height of the form */
+    overflow: auto;
+    /* Add a scrollbar if the content exceeds the height */
+    box-sizing: border-box;
 }
 
 h3 {
@@ -509,7 +566,26 @@ h3 {
 }
 
 .form-group {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 10px;
+}
+
+.gender-buttons,
+.action-buttons {
+    display: flex;
+    align-items: center;
+    /* Align items vertically centered */
+}
+
+.gender-buttons label {
+    margin-right: 10px;
+    /* Adjust the margin as needed */
+}
+
+.action-buttons button {
+    margin-left: 10px;
+    /* Adjust the margin as needed */
 }
 
 input[type="text"],
@@ -537,16 +613,17 @@ button {
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    
+
 }
 
 .reset {
     background: #ff5555;
 }
 
-#imagg{
+#imagg {
     max-width: 15%;
 }
+
 /* #backgroid-meh-Gredient{
     background: rgb(10,0,255);
     background: linear-gradient(371deg, rgba(10,0,255,0.05) 24%, rgba(239,255,0,0.05) 74%);
@@ -578,7 +655,8 @@ button {
 }
 
 .whatsapp-button img {
-    width: 60px; /* Adjust the size as needed */
+    width: 60px;
+    /* Adjust the size as needed */
     height: auto;
     border-radius: 50%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -617,9 +695,28 @@ button {
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
+@media (max-width: 990px) {
 
+    /* Add your styles here */
+    #contact {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        /* Center items horizontally */
+    }
 
+    .map,
+    .contact-form {
+        width: 100%;
+        /* Make both items take full width*/
+    }
+}
